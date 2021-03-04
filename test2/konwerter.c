@@ -1,3 +1,7 @@
+/*Kompilacje
+C - gcc -Wall -pedantic konwerter.c -lm
+C++ - g++ -Wall -pedantic konwerter.c -lm
+*/
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
@@ -44,11 +48,13 @@ int main()
   TabKodow[8] = '¯';     TabZnakow[8] = 'Z';
   TabKodow[9] = '¯';     TabZnakow[9] = 'Z';    
   
-  printf("Napis Latin2:  \"%s\"\n",Napis);
+  printf("Napis Latin2:  \"%s\"\n",Napis);/*W obu jezykach wyswietla 
+  sie napis z blednymi znakami*/
 
   KonwertujNapis(Napis,TabKodow,TabZnakow,IloscKodow);
 
-  printf("Napis ASCII:   \"%s\"\n",Napis);
+  printf("Napis ASCII:   \"%s\"\n",Napis);/*W C napis wyswietla 
+  sie poprawnie a w C++ nie poprawnie*/
 
   return 0;
 }

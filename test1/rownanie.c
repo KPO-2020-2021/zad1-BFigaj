@@ -1,3 +1,9 @@
+/*Kompilacje
+C - gcc -Wall -pedantic rownanie.c -lm
+C++ - g++ -Wall -pedantic rownanie.c -lm
+*/
+/*Oba kompilacje dzialaja a wynik programu 
+niczym sie nie roznie dla tych samych danych*/
 #include <stdio.h>
 #include <math.h>
 

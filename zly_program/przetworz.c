@@ -69,7 +69,8 @@ int RozmiarNajdluzszegoSlowa(char* Tekst)
 void ZamienNaPodkreslenie(char* Tekst)
 {
   for (; *Tekst; ++Tekst)
-      if (*Tekst == ' ') *Tekst = '_';
+      if (*Tekst == ' ') Tekst = "_";/*zamiast *Tekst = '_' poniewaz
+      konwertowalismy wkaznik na chara w stringa co dawalo segmentation fault*/
 }
 
 

@@ -1,7 +1,9 @@
+/*g++ nie dziala poniewaz do funkcji dodaj
+muszi byc podany typ przychodzacych zmiennych*/
 #include <stdio.h>
 
 
-double Dodaj();
+double Dodaj(double,double);//W c++ powinno być double, double
 
 
 int main( )
